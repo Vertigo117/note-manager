@@ -8,7 +8,7 @@ public class NoteEntity : BaseEntity
     /// <summary>
     /// Название
     /// </summary>
-    public string Name { get; set; } = default!;
+    public string Name { get; set; } = null!;
 
     /// <summary>
     /// Текст
@@ -16,7 +16,7 @@ public class NoteEntity : BaseEntity
     public string? Text { get; set; }
 
     /// <summary>
-    /// Пользователь
+    /// Навигационное свойство для связи с сущностью <see cref="UserEntity"/>
     /// </summary>
-    public UserEntity User { get; set; } = new();
+    public UserEntity User { get; set; } = null!;
 }
