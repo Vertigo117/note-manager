@@ -1,9 +1,9 @@
-namespace NoteManager.Domain.Entities;
+namespace NoteManager.Domain.Models;
 
 /// <summary>
 /// Заметка
 /// </summary>
-public class NoteEntity : BaseEntity
+public class Note : Entity
 {
     /// <summary>
     /// Название
@@ -16,7 +16,7 @@ public class NoteEntity : BaseEntity
     public string? Text { get; set; }
 
     /// <summary>
-    /// Навигационное свойство для связи с сущностью <see cref="UserEntity"/>
+    /// Навигационное свойство для связи с сущностью <see cref="Models.User"/>
     /// </summary>
-    public UserEntity User { get; set; } = null!;
+    public User User { get; set; } = null!;
 }
