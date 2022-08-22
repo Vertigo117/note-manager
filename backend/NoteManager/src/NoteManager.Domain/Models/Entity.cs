@@ -1,9 +1,9 @@
-namespace NoteManager.Domain.Entities;
+namespace NoteManager.Domain.Models;
 
 /// <summary>
-/// Базовый класс сущности
+/// Доменная сущность
 /// </summary>
-public abstract class BaseEntity
+public abstract class Entity
 {
     /// <summary>
     /// Уникальный идентификатор
