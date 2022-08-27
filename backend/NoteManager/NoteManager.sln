@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5BEB5E89
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Domain", "src\NoteManager.Domain\NoteManager.Domain.csproj", "{6765AC28-516F-463C-849F-98D899D98C26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Storage.PostgreSql", "src\NoteManager.Storage.PostgreSql\NoteManager.Storage.PostgreSql.csproj", "{C10FB549-FB06-4E53-AADD-43CCB57DBB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Web", "src\NoteManager.Web\NoteManager.Web.csproj", "{419C44D8-AF1C-4E69-8079-5DA801665300}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +23,21 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6765AC28-516F-463C-849F-98D899D98C26} = {0DB24213-F7B9-4E9B-9F76-EEF8112CD1B3}
+		{C10FB549-FB06-4E53-AADD-43CCB57DBB31} = {0DB24213-F7B9-4E9B-9F76-EEF8112CD1B3}
+		{419C44D8-AF1C-4E69-8079-5DA801665300} = {0DB24213-F7B9-4E9B-9F76-EEF8112CD1B3}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6765AC28-516F-463C-849F-98D899D98C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6765AC28-516F-463C-849F-98D899D98C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6765AC28-516F-463C-849F-98D899D98C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6765AC28-516F-463C-849F-98D899D98C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10FB549-FB06-4E53-AADD-43CCB57DBB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10FB549-FB06-4E53-AADD-43CCB57DBB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10FB549-FB06-4E53-AADD-43CCB57DBB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10FB549-FB06-4E53-AADD-43CCB57DBB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419C44D8-AF1C-4E69-8079-5DA801665300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419C44D8-AF1C-4E69-8079-5DA801665300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419C44D8-AF1C-4E69-8079-5DA801665300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419C44D8-AF1C-4E69-8079-5DA801665300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

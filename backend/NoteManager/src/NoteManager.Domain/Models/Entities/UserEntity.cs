@@ -1,11 +1,11 @@
-using NoteManager.Domain.Enums;
+using NoteManager.Domain.Models.Enums;
 
-namespace NoteManager.Domain.Models;
+namespace NoteManager.Domain.Models.Entities;
 
 /// <summary>
 /// Пользователь
 /// </summary>
-public class User : Entity
+public class UserEntity : BaseEntity
 {
     /// <summary>
     /// Адрес электронной почты
@@ -33,7 +33,7 @@ public class User : Entity
     public string PasswordHash { get; set; } = null!;
 
     /// <summary>
-    /// Навигационное свойство для связи с сущностью <see cref="Note"/>
+    /// Навигационное свойство для связи с сущностью <see cref="NoteEntity"/>
     /// </summary>
-    public List<Note> Notes { get; set; } = new();
+    public List<NoteEntity> Notes { get; set; } = new();
 }

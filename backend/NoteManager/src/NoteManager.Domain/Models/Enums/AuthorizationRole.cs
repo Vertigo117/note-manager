@@ -1,4 +1,4 @@
-namespace NoteManager.Domain.Enums;
+namespace NoteManager.Domain.Models.Enums;
 
 /// <summary>
 /// Роль пользователя в системе
