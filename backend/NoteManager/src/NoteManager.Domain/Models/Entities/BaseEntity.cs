@@ -1,14 +1,14 @@
-namespace NoteManager.Domain.Models;
+namespace NoteManager.Domain.Models.Entities;
 
 /// <summary>
 /// Доменная сущность
 /// </summary>
-public abstract class Entity
+public abstract class BaseEntity
 {
     /// <summary>
     /// Уникальный идентификатор
     /// </summary>
-    public int Id { get; init; }
+    public int Id { get; set; }
 
     /// <summary>
     /// Дата создания
