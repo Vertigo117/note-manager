@@ -5,7 +5,7 @@ namespace NoteManager.Application.Contracts;
 /// <summary>
 /// Объект передачи данных для создания и обновления сущности <see cref="Note"/>
 /// </summary>
-public class NoteUpsertDto
+public class NoteUpsertRequest
 {
     /// <summary>
     /// Заголовок заметки

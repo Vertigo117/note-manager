@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NoteManager.Domain.Abstractions.Interfaces.Repositories;
 using NoteManager.Domain.Models.Entities;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Repositories;
+namespace NoteManager.Infrastructure.Repositories;
 
 /// <inheritdoc cref="IUserRepository"/>
 internal class UserRepository : EntityRepository<User>, IUserRepository

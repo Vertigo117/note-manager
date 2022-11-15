@@ -1,6 +1,6 @@
 using NoteManager.Domain.Abstractions.Interfaces.Repositories;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Repositories;
+namespace NoteManager.Infrastructure.Repositories;
 
 /// <inheritdoc />
 internal class UnitOfWork : IUnitOfWork

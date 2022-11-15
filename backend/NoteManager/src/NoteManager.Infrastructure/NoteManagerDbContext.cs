@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using NoteManager.Domain.Models.Entities;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql;
+namespace NoteManager.Infrastructure;
 
 /// <summary>
 /// Контекст приложения

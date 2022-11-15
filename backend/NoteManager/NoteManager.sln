@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5BEB5E89
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Domain", "src\NoteManager.Domain\NoteManager.Domain.csproj", "{6765AC28-516F-463C-849F-98D899D98C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Infrastructure.Storage.PostgreSql", "src\NoteManager.Infrastructure.Storage.PostgreSql\NoteManager.Infrastructure.Storage.PostgreSql.csproj", "{C10FB549-FB06-4E53-AADD-43CCB57DBB31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Infrastructure", "src\NoteManager.Infrastructure\NoteManager.Infrastructure.csproj", "{C10FB549-FB06-4E53-AADD-43CCB57DBB31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Web", "src\NoteManager.Web\NoteManager.Web.csproj", "{419C44D8-AF1C-4E69-8079-5DA801665300}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.API", "src\NoteManager.API\NoteManager.API.csproj", "{419C44D8-AF1C-4E69-8079-5DA801665300}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteManager.Application", "src\NoteManager.Application\NoteManager.Application.csproj", "{AD40E104-9F14-41DB-990B-811683277EA2}"
 EndProject

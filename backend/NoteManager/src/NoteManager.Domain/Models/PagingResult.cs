@@ -6,7 +6,7 @@ namespace NoteManager.Domain.Models;
 /// Модель для постраничного вывода экземпляров сущности
 /// </summary>
 /// <typeparam name="TEntity">Тип сущности</typeparam>
-public class EntityPage<TEntity> where TEntity : Entity
+public class PagingResult<TEntity> where TEntity : Entity
 {
     /// <summary>
     /// Содержимое страницы

@@ -14,7 +14,7 @@ public interface INoteService
     /// <param name="userId">Уникальный идентификатор пользователя</param>
     /// <returns>Задача, которая содержит результат выполнения асинхронной операции. Результат операции представляет
     /// собой данные созданной заметки</returns>
-    Task<NoteDto> CreateAsync(NoteUpsertDto note, Guid userId);
+    Task<NoteResponse> CreateAsync(NoteUpsertRequest note, Guid userId);
 
     /// <summary>
     /// Асинхронно осуществляет постраничный вывод заметок пользователя с указанным уникальным идентификатором
@@ -24,7 +24,7 @@ public interface INoteService
     /// <param name="take">Количество заметок, которые необходимо вывести</param>
     /// <returns>Задача, которая содержит результат выполнения асинхронной операции. Результат операции
     /// представляет собой страницу с заметками</returns>
-    Task<NotePageDto> GetAsync(Guid userId, int skip, int take);
+    Task<NotePagingResponse> GetAsync(Guid userId, int skip, int take);
 
     /// <summary>
     /// Асинхронно обновляет данные заметки с указанным уникальным идентификатором
@@ -32,7 +32,7 @@ public interface INoteService
     /// <param name="id">Уникальный идентификатор заметки</param>
     /// <param name="note">Данные для обновления заметки</param>
     /// <returns>Задача, которая содержит результат выполнения асинхронной операции</returns>
-    Task UpdateAsync(Guid id, NoteUpsertDto note);
+    Task UpdateAsync(Guid id, NoteUpsertRequest note);
 
     /// <summary>
     /// Асинхронно удаляет заметку с указанным уникальным идентификатором

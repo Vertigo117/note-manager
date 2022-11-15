@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql;
+namespace NoteManager.Infrastructure;
 
 /// <summary>
 /// Выполняет миграцию данных

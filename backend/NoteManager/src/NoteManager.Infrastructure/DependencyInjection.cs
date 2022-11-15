@@ -2,11 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using NoteManager.Domain.Abstractions.Interfaces.Repositories;
-using NoteManager.Infrastructure.Storage.PostgreSql.Options;
-using NoteManager.Infrastructure.Storage.PostgreSql.Repositories;
-using NoteManager.Infrastructure.Storage.PostgreSql.Seed;
+using NoteManager.Infrastructure.Options;
+using NoteManager.Infrastructure.Repositories;
+using NoteManager.Infrastructure.Seed;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql;
+namespace NoteManager.Infrastructure;
 
 /// <summary>
 /// Методы расширения для регистрации зависимостей

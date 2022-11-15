@@ -1,4 +1,4 @@
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Seed;
+namespace NoteManager.Infrastructure.Seed;
 
 /// <inheritdoc />
 internal class DatabaseSeeder : IDatabaseSeeder

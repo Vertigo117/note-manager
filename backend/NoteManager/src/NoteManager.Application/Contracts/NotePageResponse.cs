@@ -3,12 +3,12 @@ namespace NoteManager.Application.Contracts;
 /// <summary>
 /// Объект передачи данных для постраничного вывода заметок
 /// </summary>
-public class NotePageDto
+public class NotePagingResponse
 {
     /// <summary>
     /// Сущности на странице
     /// </summary>
-    public NoteDto[] Content { get; init; } = Array.Empty<NoteDto>();
+    public NoteResponse[] Content { get; init; } = Array.Empty<NoteResponse>();
 
     /// <summary>
     /// Количество элементов на странице

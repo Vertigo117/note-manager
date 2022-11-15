@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NoteManager.Domain.Models.Entities;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Configurations;
+namespace NoteManager.Infrastructure.Configurations;
 
 internal class NoteConfiguration : EntityConfiguration<Note>
 {

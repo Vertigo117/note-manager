@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NoteManager.Domain.Models.Entities;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Configurations;
+namespace NoteManager.Infrastructure.Configurations;
 
 internal abstract class EntityConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
     where TEntity : Entity

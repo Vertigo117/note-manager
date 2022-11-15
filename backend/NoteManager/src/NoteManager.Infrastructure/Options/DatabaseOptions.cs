@@ -1,4 +1,4 @@
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Options;
+namespace NoteManager.Infrastructure.Options;
 
 /// <summary>
 /// Настройки базы данных

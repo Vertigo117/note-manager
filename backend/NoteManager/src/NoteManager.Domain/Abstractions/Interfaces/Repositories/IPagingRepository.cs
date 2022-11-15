@@ -17,7 +17,7 @@ public interface IPagingRepository<TEntity> where TEntity : Entity
     /// <param name="take">Количество заметок на странице</param>
     /// <param name="skip">Сколько пропустить</param>
     /// <returns>Задачу, которая содержит модель постраничного вывода</returns>
-    Task<EntityPage<TEntity>> GetEntityPageByExpressionAsync(
+    Task<PagingResult<TEntity>> GetEntityPageByExpressionAsync(
         Expression<Func<TEntity, bool>> expression,
         int skip,
         int take

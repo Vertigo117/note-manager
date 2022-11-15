@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Options;
+namespace NoteManager.Infrastructure.Options;
 
 /// <summary>
 /// Инициализация настроек базы данных

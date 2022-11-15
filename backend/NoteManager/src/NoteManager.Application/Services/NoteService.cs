@@ -19,7 +19,7 @@ public class NoteService : INoteService
         _mapper = mapper;
     }
 
-    public async Task<NoteDto> CreateAsync(NoteUpsertDto note, Guid userId)
+    public async Task<NoteResponse> CreateAsync(NoteUpsertRequest note, Guid userId)
     {
         var noteEntity = _mapper.Map<Note>(note);
 
@@ -35,19 +35,19 @@ public class NoteService : INoteService
         _repositoryManager.NoteRepository.Add(noteEntity);
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
 
-        return _mapper.Map<NoteDto>(noteEntity);
+        return _mapper.Map<NoteResponse>(noteEntity);
     }
 
-    public async Task<NotePageDto> GetAsync(Guid userId, int skip, int take)
+    public async Task<NotePagingResponse> GetAsync(Guid userId, int skip, int take)
     {
         var noteEntityPage =
             await _repositoryManager.NoteRepository.GetEntityPageByExpressionAsync(note => note.UserId == userId, skip,
                 take);
 
-        return _mapper.Map<NotePageDto>(noteEntityPage);
+        return _mapper.Map<NotePagingResponse>(noteEntityPage);
     }
 
-    public async Task UpdateAsync(Guid id, NoteUpsertDto note)
+    public async Task UpdateAsync(Guid id, NoteUpsertRequest note)
     {
         var noteEntity = await _repositoryManager.NoteRepository.FindAsync(id);
 

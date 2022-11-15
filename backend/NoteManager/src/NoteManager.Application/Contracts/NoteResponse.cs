@@ -5,7 +5,7 @@ namespace NoteManager.Application.Contracts;
 /// <summary>
 /// Объект передачи данных для сущности <see cref="Note"/>
 /// </summary>
-public class NoteDto
+public class NoteResponse
 {
     /// <summary>
     /// Уникальный идентификатор

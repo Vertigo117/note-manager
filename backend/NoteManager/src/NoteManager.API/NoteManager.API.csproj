@@ -21,7 +21,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\NoteManager.Infrastructure.Storage.PostgreSql\NoteManager.Infrastructure.Storage.PostgreSql.csproj" />
+      <ProjectReference Include="..\NoteManager.Application\NoteManager.Application.csproj" />
+      <ProjectReference Include="..\NoteManager.Infrastructure\NoteManager.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

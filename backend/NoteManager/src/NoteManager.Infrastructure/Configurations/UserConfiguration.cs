@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NoteManager.Domain.Models.Entities;
 using NoteManager.Domain.Models.Enums;
 
-namespace NoteManager.Infrastructure.Storage.PostgreSql.Configurations;
+namespace NoteManager.Infrastructure.Configurations;
 
 internal class UserConfiguration : EntityConfiguration<User>
 {

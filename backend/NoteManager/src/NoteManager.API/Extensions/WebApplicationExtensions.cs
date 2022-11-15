@@ -1,6 +1,6 @@
-using NoteManager.Infrastructure.Storage.PostgreSql;
+using NoteManager.Infrastructure;
 
-namespace NoteManager.Web.Extensions;
+namespace NoteManager.API.Extensions;
 
 /// <summary>
 /// Содержит методы расширений для класса <see cref="WebApplication"/>
